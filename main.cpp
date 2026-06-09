@@ -37,6 +37,7 @@ int main(int argc, char* argv[]) {
 
             processManagement.executeTasks();
         } else {
+            std::cout << "ERROR!" << std::endl;
             std::cout << "Invalid directory path!" << std::endl;
         }
     } catch (const fs::filesystem_error& ex) {
